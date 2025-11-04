@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:background="#F3F4F6">
+    android:background="#FAFAFA">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,28 +11,28 @@
         android:orientation="vertical"
         android:padding="24dp">
 
-        <!-- 🟦 Header -->
+        <!-- 🟪 Header -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ỨNG DỤNG GỌI ĐIỆN &amp; NHẮN TIN"
+            android:text="ỨNG DỤNG GỌI ĐIỆN 💬 NHẮN TIN"
             android:textSize="22sp"
             android:textStyle="bold"
-            android:textColor="#1E88E5"
+            android:textColor="#FFFFFF"
             android:gravity="center"
-            android:background="@drawable/header_bg"
-            android:padding="16dp"
-            android:elevation="6dp"
-            android:layout_marginBottom="24dp" />
+            android:background="@drawable/header_bg_modern"
+            android:padding="20dp"
+            android:elevation="8dp"
+            android:layout_marginBottom="28dp" />
 
-        <!-- 🔢 Nhập số điện thoại -->
+        <!-- 📞 Nhập số điện thoại -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Số điện thoại"
+            android:text="📞 Số điện thoại"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="#374151"
+            android:textColor="#263238"
             android:layout_marginBottom="8dp" />
 
         <EditText
@@ -41,20 +41,20 @@
             android:layout_height="wrap_content"
             android:hint="Nhập số điện thoại..."
             android:inputType="phone"
-            android:background="@drawable/edittext_background"
+            android:background="@drawable/edittext_background_soft"
             android:padding="14dp"
-            android:textColor="#111827"
-            android:textColorHint="#9CA3AF"
+            android:textColor="#000000"
+            android:textColorHint="#9E9E9E"
             android:layout_marginBottom="20dp" />
 
-        <!-- 💬 Nhập tin nhắn -->
+        <!-- 💌 Nhập tin nhắn -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tin nhắn"
+            android:text="💌 Nội dung tin nhắn"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="#374151"
+            android:textColor="#263238"
             android:layout_marginBottom="8dp" />
 
         <EditText
@@ -64,13 +64,13 @@
             android:hint="Nhập nội dung tin nhắn..."
             android:gravity="top"
             android:inputType="textMultiLine"
-            android:background="@drawable/edittext_background"
+            android:background="@drawable/edittext_background_soft"
             android:padding="14dp"
-            android:textColor="#111827"
-            android:textColorHint="#9CA3AF"
+            android:textColor="#000000"
+            android:textColorHint="#9E9E9E"
             android:layout_marginBottom="30dp" />
 
-        <!-- 🔘 Nút thao tác -->
+        <!-- ⚡ Nút thao tác -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -83,26 +83,28 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="📱 Gọi điện"
+                android:text="📞 Gọi điện"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                android:backgroundTint="#43A047"
-                android:padding="14dp"
-                android:layout_marginEnd="8dp" />
+                android:textSize="16sp"
+                android:background="@drawable/btn_green_gradient"
+                android:layout_marginEnd="8dp"
+                android:elevation="5dp" />
 
             <Button
                 android:id="@+id/btnSendSMS"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="💌 Gửi SMS"
+                android:text="💬 Gửi SMS"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                android:backgroundTint="#FB8C00"
-                android:padding="14dp"
-                android:layout_marginStart="8dp" />
+                android:textSize="16sp"
+                android:background="@drawable/btn_orange_gradient"
+                android:layout_marginStart="8dp"
+                android:elevation="5dp" />
         </LinearLayout>
 
     </LinearLayout>

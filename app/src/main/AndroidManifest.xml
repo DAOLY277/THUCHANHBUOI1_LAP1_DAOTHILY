@@ -13,10 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".DiceActivity"
+            android:name=".MainActivity"
             android:exported="false" />
-        <activity android:name=".MainActivity" />
         <activity android:name=".RandomNumberActivity" />
+        <activity android:name=".DiceActivity" />
         <activity
             android:name=".Nghegoi"
             android:exported="true">
